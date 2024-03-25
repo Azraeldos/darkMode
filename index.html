@@ -1,0 +1,55 @@
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8"  />
+    <meta name = "viewpoint"
+                    content = "width = device-width, initial-scale=" />
+    <title>
+        Dark mode
+    </title>
+    <!-- CSS -->
+    <style>
+         body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+ 
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+ 
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+ </head>    
+ <body>
+    <h1>Dark mode or Light mode Application</h1>
+    <p>
+        sample
+    </p>
+    <img src="smile.jpg" alt="PLaceholder">
+    <h3 id = "darkModeText">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Dark-Mode</button>
+    <button onclick="lightMode()">Light-Mode</button>
+    <!-- JavaScript -->
+    <script>
+       function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("darkModeText");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("darkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        } 
+    </script>
+
+ </body>
+</html>
